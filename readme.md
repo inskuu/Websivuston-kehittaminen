@@ -1,0 +1,1 @@
+Tämä on websovellusten kehittäminen opintojakson repositorio. Tänne tallennan jokaisen mmoduulin työpajatehtävät omiin kansioihinsa.
