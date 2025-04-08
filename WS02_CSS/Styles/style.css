@@ -19,20 +19,23 @@ th, td {
 }
 
 th {background-color: rgb(140, 71, 238);
+  font-size: 1.3em;
 }
 td {background-color:rgb(170, 117, 243) ;}
 form {
-  display: :flex;
+  display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
+  width: 20%
 }
 label {
   font-weight: bold;
 }
 input[type="text"], input[type="email"] {
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid  rgb(83, 7, 69);
   border-radius: 10px;
+
 }
 input[type="submit"] {
   background-color: rgb(83, 7, 69);
