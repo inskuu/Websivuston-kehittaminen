@@ -107,14 +107,9 @@ input[type="submit"]:hover {
   font-style: oblique;
   float: right;
 }
-
-.quote:before {
+.quote::before {
   content: "~";
   font-size: 50px;
   position: absolute;
-  left: 0;
-  top: 0;
   color: rgb(83, 7, 69);
 }
-
-
