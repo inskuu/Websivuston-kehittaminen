@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./Styles/style.css">
     <meta charset="UTF-8">
     <title>Iinan kotisivut</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
 </head>
 
 <body>
@@ -17,47 +18,36 @@
     </header>
 
     <nav>
-        <div class="wrapper">
-            <div>
-                <a href="index.html">Index HTML </a>
-            </div>
-            <div>
-                <a href="second.html"> Second HTML</a>
-            </div>
-            <div>
-                <a href="third.html"> Third HTML</a>
-            </div>
-        </div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <div class="container">
-        <article>
-            <h2>Kuka minä olen?</h2>
-            <p>Olen Iina Karhu, 36 vuotta. Asun Laajasalossa mieheni ja kahden lapseni
-              kanssa.<br>Aiemmilta ammateiltani olen kosmetologi, kampaaja ja
-              lähihoitaja.<br>Viimeiset 10 vuotta olen tehnyt töitä lähihoitajana
-              kehitysvammaisten asuntoryhmässä.</p>
-              <div class="animation-box"></div>
-        </article>
-
-        <aside>
-          <img
-          src="Images/Oma_kuva.jpg"
-          alt="Tässä uusin löytämäni kuva minusta"
-          class="omakuva"
-          width="200"
-          height="300"
-        >
-            <h2>Harrastukseni:</h2>
-            <ul>
-              <li>Pyöräily</li>
-              <li>Ulkoilu ja retkeily perheen kanssa</li>
-              <li>Kausittainen lukeminen</li>
-              <li>Matkustelu</li>
-            </ul>
-            <p>&#128526;</p>
-        </aside>
-
-        <section>
+    <main>
+      <aside>
+        <img
+        src="Images/Oma_kuva.jpg"
+        alt="Tässä uusin löytämäni kuva minusta"
+        class="omakuva"
+        width="200"
+        height="300"
+      >
+          <h2>Harrastukseni:</h2>
+          <ul>
+            <li>Pyöräily</li>
+            <li>Ulkoilu ja retkeily perheen kanssa</li>
+            <li>Kausittainen lukeminen</li>
+            <li>Matkustelu</li>
+          </ul>
+          <div class="animation-box"></div>
+      </aside>
+      <section>
+        <h2>Kuka minä olen?</h2>
+        <p>Olen Iina Karhu, 36 vuotta. Asun Laajasalossa mieheni ja kahden lapseni
+          kanssa.<br>Aiemmilta ammateiltani olen kosmetologi, kampaaja ja
+          lähihoitaja.<br>Viimeiset 10 vuotta olen tehnyt töitä lähihoitajana
+          kehitysvammaisten asuntoryhmässä.</p>
             <h2>Tästä taulukossa lempi matkustelukohteitani ja maita, joihin haluaisin
               vielä matkustaa</h2>
               <table>
@@ -86,8 +76,24 @@
                 <input type="email" id="email" name="email"><br><br>
                 <input type="submit" value="Lähetä">
               </form>
+              <br>
+              <div class="flex-container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+              </div>
+              <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+              </div>
+              <br>
+              <div class="responsive-box">Resize the window to see the effect</div>
         </section>
-    </div>
+  </main>
     <footer>Copyright © IinaKarhu</footer>
 
 </body>

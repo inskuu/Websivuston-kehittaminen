@@ -9,7 +9,12 @@ body {
   height: fit-content;
 }
 
-header,
+header {
+  color: rgb(0, 0, 0);
+  background-color: #dc8ff0;
+  clear: left;
+  text-align: center;
+}
 footer {
   padding: 1em;
   color: rgb(0, 0, 0);
@@ -26,123 +31,67 @@ h2 {
   text-align: left;
 }
 
-div.container {
-  width: 100%;
-}
-
-.proge {
-  position: relative;
-  left: 40px;
-  font-family: Arial, sans-serif;
-}
 p {
   position: relative;
   left: 20px;
   font-family: Arial, sans-serif;
 }
 
-#toinen {
-  font-size: 16px;
-  color: rgb(73, 15, 107);
-  text-align: center;
-}
-
-#nav2 {
-  float: left;
-  width: 25%;
-  background: #f780dd;
-  border-right: 1px solid gray;
-  height: 250px;
-  padding: 0px;
-}
-
-a:link {
-  color: #48e2d5;
-}
-a:visited {
-  color: #7cc4ee;
-}
-a:focus {
-  color: #f50fd6;
-}
-a:hover {
-  color: #f7fa37;
-}
-a:active {
-  color: #42be61;
-}
-
+/* harrastuslista */
 ul {
   list-style-type: none;
   padding: 5px;
 }
 
-#bar {
-  padding-left: 15px;
-  margin: 5px;
-}
-
-#sektio {
-  width: 100%;
-  height: 250px;
-  padding: 0%;
-}
-
-.wrapper {
-  display: flex;
-}
-
-.wrapper > div {
-  flex: 1;
-  text-align: center;
-}
-
+/* navigointi */
 nav {
   max-width: 100%;
-  background-color: #962ab1;
+  background-color: #000000;
   margin: 0;
   padding: 1em;
 }
-
-nav ul a {
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(83, 7, 69);
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
+nav li {
+  float: left;
+}
+li a:hover {
+  background-color:  #dc8ff0;;
+}
+
 
 section {
   float: left;
-  width: 65%;
+  width: 70%;
   padding: 1em;
   color: rgb(0, 0, 0);
-  height: 700px;
-}
-article {
-  font-size: 1.1em;
-  float: left;
-  width: 65%;
-  padding: 1em;
-  color: rgb(0, 0, 0);
-  height: 300px;
+  height: 1200px;
 }
 
+/* sivupalkin määrittely */
 aside {
   font-size: 1.05em;
   float: right;
-  width: 25%;
+  width: 20%;
   padding: 1em;
   border-left: 1px solid gray;
   color: rgb(0, 0, 0);
-  height: 1040px;
+  height: 1240px;
 }
 
-#kuva1 {
-  padding-left: 15px;
-  margin: 5px;
-}
-
-#kuva2 {
-  padding-left: 15px;
-  margin: 5px;
-}
+/* taulukko */
 table {
   width: 50%;
 border-collapse: separate;
@@ -163,12 +112,15 @@ tr:nth-child(even) {
 th {
   font-size: 1.3em;
 }
+
+/* form */
 form {
   display: flex;
   flex-direction: column;
   gap: 2px;
   width: 20%
 }
+/* form */
 label {
   font-weight: bold;
 }
@@ -176,7 +128,6 @@ input[type="text"], input[type="email"] {
   padding: 8px;
   border: 1px solid  rgb(83, 7, 69);
   border-radius: 10px;
-
 }
 input[type="submit"] {
   background-color: rgb(83, 7, 69);
@@ -189,7 +140,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: rgb(221, 26, 224);
 }
+
+/* liikkuva laatikko */
 .animation-box {
+  margin: 20px;
   width: 70px;
   height: 50px;
   position: relative;
@@ -202,13 +156,18 @@ input[type="submit"]:hover {
   75%  {background-color:rgb(131, 215, 205); left:0px; top:100px;}
   100% {background-color:rgb(247, 247, 132); left:0px; top:0px;}
 }
+
+/* kuvan muotoilu */
 .omakuva {
+  border-radius: 8px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
 .omakuva:hover {
   filter: grayscale(0%);
 }
+
+/* fraasi */
 .quote {
   position: sticky;
   top: 0;
@@ -216,6 +175,7 @@ input[type="submit"]:hover {
   font-style: oblique;
   float: right;
 }
+
 .quote:before {
   content: "~";
   font-size: 50px;
@@ -223,4 +183,42 @@ input[type="submit"]:hover {
   left: 0;
   top: 0;
   color: rgb(83, 7, 69);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  background-color: rgb(169, 114, 245);
+  padding: 20px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgb(247, 247, 132);
+  padding: 20px;
+  text-align: center;
+}
+/* responsiivinen laatikko */
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+/* responsiivinen laatikko */
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: rgb(135, 193, 211);
+  }
+}
+/* responsiivinen laatikko */
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: rgb(190, 136, 225);
+  }
 }
