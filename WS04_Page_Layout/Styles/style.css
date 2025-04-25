@@ -23,6 +23,14 @@ footer {
   text-align: center;
 }
 
+section {
+  float: left;
+  width: 70%;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  height: 900px;
+}
+
 h1 {
   text-align: center;
 }
@@ -34,7 +42,6 @@ h2 {
 p {
   position: relative;
   left: 20px;
-  font-family: Arial, sans-serif;
 }
 
 /* harrastuslista */
@@ -71,15 +78,6 @@ li a:hover {
   background-color:  #dc8ff0;;
 }
 
-
-section {
-  float: left;
-  width: 70%;
-  padding: 1em;
-  color: rgb(0, 0, 0);
-  height: 1200px;
-}
-
 /* sivupalkin määrittely */
 aside {
   font-size: 1.05em;
@@ -88,7 +86,7 @@ aside {
   padding: 1em;
   border-left: 1px solid gray;
   color: rgb(0, 0, 0);
-  height: 1240px;
+  height: 940px;
 }
 
 /* taulukko */
@@ -185,10 +183,12 @@ input[type="submit"]:hover {
   color: rgb(83, 7, 69);
 }
 
+/* viikko aikataulu */
 .flex-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 10px;
 }
 .box {
   background-color: rgb(169, 114, 245);
@@ -197,7 +197,7 @@ input[type="submit"]:hover {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap: 10px;
 }
 .grid-item {
@@ -205,6 +205,7 @@ input[type="submit"]:hover {
   padding: 20px;
   text-align: center;
 }
+
 /* responsiivinen laatikko */
 .responsive-box {
   padding: 20px;
