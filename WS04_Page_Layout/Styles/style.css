@@ -4,11 +4,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: 1px solid rgb(81, 5, 151);
+  border: 2px solid black;
   flex-direction: column;
   height: fit-content;
 }
-
 header {
   color: rgb(0, 0, 0);
   background-color: #dc8ff0;
@@ -22,23 +21,19 @@ footer {
   clear: left;
   text-align: center;
 }
-
 section {
   float: left;
   width: 70%;
   padding: 1em;
   color: rgb(0, 0, 0);
-  height: 900px;
+  height: 1000px;
 }
-
 h1 {
   text-align: center;
 }
-
 h2 {
   text-align: left;
 }
-
 p {
   position: relative;
   left: 20px;
@@ -84,9 +79,9 @@ aside {
   float: right;
   width: 20%;
   padding: 1em;
-  border-left: 1px solid gray;
+  border-left: 2px solid gray;
   color: rgb(0, 0, 0);
-  height: 940px;
+  height: 1040px;
 }
 
 /* taulukko */
