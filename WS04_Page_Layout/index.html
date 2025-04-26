@@ -19,9 +19,9 @@
 
     <nav>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Minusta</a></li>
+          <li><a href="#services">Harrastukset</a></li>
+          <li><a href="#contact">Ota yhteyttä</a></li>
         </ul>
     </nav>
     <main>
@@ -34,7 +34,7 @@
         height="300"
       >
           <h2>Harrastukseni:</h2>
-          <ul>
+          <ul id="services">
             <li>Pyöräily</li>
             <li>Ulkoilu ja retkeily perheen kanssa</li>
             <li>Kausittainen lukeminen</li>
@@ -42,7 +42,7 @@
           </ul>
           <div class="animation-box"></div>
       </aside>
-      <section>
+      <section id="about">
         <h2>Kuka minä olen?</h2>
         <p>Olen Iina Karhu, 36 vuotta. Asun Laajasalossa mieheni ja kahden lapseni
           kanssa.<br>Aiemmilta ammateiltani olen kosmetologi, kampaaja ja
@@ -69,6 +69,7 @@
                 </tr>
               </table>
               <br>
+              <h2>Viikko aikataulu</h2>
               <div class="flex-container">
                 <div class="box">Kuka</div>
                 <div class="box">Maanantai</div>
@@ -100,7 +101,7 @@
               <br>
               <div class="responsive-box">Kokeile vaihtaa väriä säätämällä ruudun kokoa</div>
               <br>
-              <form>
+              <form id="contact">
                 <label for="name">Nimi:</label>
                 <input type="text" id="name" name="name"><br><br>
                 <label for="email">Sähköposti:</label>
