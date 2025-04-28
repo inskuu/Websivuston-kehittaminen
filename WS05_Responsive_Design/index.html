@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <meta charset="UTF-8">
+    <title>Iinan kotisivut</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+</head>
+
+<body>
+
+    <header class="yläpalkki">
+        <h1>Iinan kotisivut</h1>
+        <blockquote class="quote">
+          "Ei hullulla huolta ole."
+        </blockquote>
+    </header>
+
+    <nav class="responsive-nav">
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Valikko</button>
+      <ul class="nav-list">
+          <li><a href="#about">Minusta</a></li>
+          <li><a href="#services">Harrastukset</a></li>
+          <li><a href="#contact">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+    <main>
+      <aside>
+        <img
+        src="Images/Oma_kuva.jpg"
+        alt="Tässä uusin löytämäni kuva minusta"
+        class="omakuva"
+      >
+          <h2>Harrastukseni:</h2>
+          <ul id="services">
+            <li>Pyöräily</li>
+            <li>Ulkoilu ja retkeily perheen kanssa</li>
+            <li>Kausittainen lukeminen</li>
+            <li>Matkustelu</li>
+          </ul>
+          <div class="animation-box"></div>
+      </aside>
+      <section id="about">
+        <h2>Kuka minä olen?</h2>
+        <p>Olen Iina Karhu, 36 vuotta. Asun Laajasalossa mieheni ja kahden lapseni
+          kanssa.<br>Aiemmilta ammateiltani olen kosmetologi, kampaaja ja
+          lähihoitaja.<br>Viimeiset 10 vuotta olen tehnyt töitä lähihoitajana
+          kehitysvammaisten asuntoryhmässä.</p>
+            <h2>Tästä taulukossa lempi matkustelukohteitani ja maita, joihin haluaisin
+              vielä matkustaa</h2>
+              <table>
+                <tr>
+                  <th>Top3</th>
+                  <th>Haaveena päästä</th>
+                </tr>
+                <tr>
+                  <td>Australia</td>
+                  <td>Islanti</td>
+                </tr>
+                <tr>
+                  <td>Kreikka</td>
+                  <td>Slovenia</td>
+                </tr>
+                <tr>
+                  <td>Ranska</td>
+                  <td>Uganda</td>
+                </tr>
+              </table>
+              <br>
+              <img src="./Images/matkustus.jpg" alt="Responsive Image" class="responsive-image">
+              <br>
+              <h2>Viikko aikataulu</h2>
+              <div class="flex-container">
+                <div class="box">Kuka</div>
+                <div class="box">Maanantai</div>
+                <div class="box">Tiistai</div>
+                <div class="box">Keskiviikko</div>
+                <div class="box">Torstai</div>
+                <div class="box">Perjantai</div>
+                <div class="box">Lauantai</div>
+                <div class="box">Sunnuntai</div>
+              </div>
+            
+              <br>
+              <div class="responsive-box">Kokeile vaihtaa väriä säätämällä ruudun kokoa</div>
+              <br>
+              <div class="media-query-box">Resize the window to see the effect</div>
+              <br>
+              <div class="responsive-container">
+                <div class="column">Column 1</div>
+                <div class="column">Column 2</div>
+              </div>
+              <br>
+              <form id="contact">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Lähetä">
+              </form>
+        </section>
+  </main>
+    <footer>Copyright © IinaKarhu</footer>
+    <script>
+      function toggleMenu() {
+          const navList = document.querySelector('.responsive-nav .nav-list');
+          navList.classList.toggle('active');
+      }
+  </script>
+</body>
+
+</html>

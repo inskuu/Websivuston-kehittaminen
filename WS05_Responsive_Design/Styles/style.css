@@ -1,0 +1,326 @@
+body {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    flex-direction: column;
+    height: fit-content;
+  }
+  header {
+    color: rgb(0, 0, 0);
+    background-color: #dc8ff0;
+    clear: left;
+    text-align: center;
+  }
+    @media (max-width: 600px) {
+       .yläpalkki {
+          background-color: rgb(169, 114, 245);
+        }
+      }
+    
+  footer {
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    background-color: #dc8ff0;
+    clear: left;
+    text-align: center;
+  }
+  section {
+    float: left;
+    width: 70%;
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    height: 1400px;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  p {
+    position: relative;
+    left: 20px;
+  }
+  
+  /* harrastuslista */
+  ul {
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  /* responsiivinen navigointi */
+  .responsive-nav .nav-list {
+    display: flex;
+    list-style: none;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-nav .nav-list {
+      display: none;
+    }
+  
+    .responsive-nav .menu-toggle {
+      display: block;
+    }
+  }
+  /* navigoinnin tyyli */
+.responsive-nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.responsive-nav .menu-toggle {
+    display: none;
+    background-color: black;
+    color: #dc8ff0;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.responsive-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.responsive-nav .nav-list li {
+    margin: 0;
+}
+
+.responsive-nav .nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.responsive-nav .nav-list li a:hover {
+    background-color: #dc8ff0;
+    border-radius: 5px;
+}
+
+/* navigoinnin tyyli pienellä ruudulla */
+@media (max-width: 600px) {
+    .responsive-nav .menu-toggle {
+        display: block;
+    }
+
+    .responsive-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        color: rgb(83, 7, 69);
+    }
+
+    .responsive-nav .nav-list.active {
+        display: flex;
+    }
+
+    .responsive-nav .nav-list li {
+        text-align: center;
+    }
+}
+
+  /* sivupalkin määrittely */
+  aside {
+    font-size: 1.05em;
+    float: right;
+    width: 20%;
+    padding: 1em;
+    border-left: 2px solid gray;
+    color: rgb(0, 0, 0);
+    height: 1440px;
+  }
+  
+  /* taulukko */
+  table {
+    width: 50%;
+  border-collapse: separate;
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: left;
+  }
+  tr:nth-child(odd) {
+    background-color: rgb(169, 114, 245);
+  }
+  tr:nth-child(even) {
+    background-color: rgb(233, 144, 245);
+  }
+  th {
+    font-size: 1.3em;
+  }
+  
+  /* form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 20%
+  }
+  /* form */
+  label {
+    font-weight: bold;
+  }
+  input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid  rgb(83, 7, 69);
+    border-radius: 10px;
+  }
+  input[type="submit"] {
+    background-color: rgb(83, 7, 69);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(221, 26, 224);
+  }
+  
+  /* liikkuva laatikko */
+  .animation-box {
+    margin: 20px;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    animation: move 4s infinite alternate;
+  }
+  @keyframes move {
+    0%   {background-color:rgb(247, 247, 132); left:0px; top:0px;}
+    25%  {background-color:rgb(190, 136, 225); left:100px; top:0px;}
+    50%  {background-color:rgb(135, 193, 211); left:100px; top:100px;}
+    75%  {background-color:rgb(131, 215, 205); left:0px; top:100px;}
+    100% {background-color:rgb(247, 247, 132); left:0px; top:0px;}
+  }
+  
+  /* kuvan muotoilu */
+  .omakuva {
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  .omakuva:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* fraasi */
+  .quote {
+    position: sticky;
+    top: 0;
+    padding-bottom: 20px;
+    font-style: oblique;
+    float: right;
+  }
+  
+  .quote:before {
+    content: "~";
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(83, 7, 69);
+  }
+  
+  /* viikko aikataulu */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+  }
+  .box {
+    background-color: rgb(169, 114, 245);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }
+ 
+  
+  /* responsiivinen laatikko */
+  .responsive-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-box {
+      background-color: rgb(135, 193, 211);
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .responsive-box {
+      background-color: rgb(190, 136, 225);
+    }
+  }
+
+/*responsiiviset kolumnit */
+  .responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }
+
+  /* responsiivinen kuvat */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .omakuva {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  /* responsiivinen media-box */ 
+  .media-query-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .media-query-box {
+      background-color: lightcoral;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .media-query-box {
+      background-color: lightblue;
+    }
+  }
