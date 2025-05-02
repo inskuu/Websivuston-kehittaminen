@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projektityö</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./Images/australia.png">
+    <link rel="stylesheet" href="./Styles/style.css">
+  </head>
+  <body>
+    <header>
+    <h1>Vuosi Australiassa</h1>
+</header>
+<nav class="responsive-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Valikko</button>
+    <ul class="nav-list">
+        <li><a href="index.html">Minusta</a></li>
+        <li><a href="toka.html">Meidän auto</a></li>
+        <li><a href="kolmas.html">Avokadofarmi</a></li>
+      </ul>
+  </nav>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Minä</h2>
+        <div class="fakeimg">
+            <img src="Images/omakuva.jpg"
+            alt="Oma kuva"
+            width="465px">
+            </div>
+            <br>
+        <p class="kuvateksti">Tässä olen minä jossain päin Australiaa vuonna 2013</p>
+      </div>
+      <div class="card">
+        <h3>Reittikartta</h3>
+        <div class="fakeimg">
+            <a href="https://www.travellerspoint.com/map/#/trip/494115/stop/3252067"><img src="Images/kartta.png" width="465px"></a>
+        </div>
+        <br>
+        <p class="kuvateksti">Kuvaa klikkaamalla pääset tutkimaan karttaa tarkemmin</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Copyright © Iina Karhu</h2>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            const navList = document.querySelector('.responsive-nav .nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
