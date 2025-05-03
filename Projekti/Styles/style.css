@@ -3,7 +3,7 @@ header {
     background-color: #216564 ;
 clear: left;
   text-align: center;
-  padding: 100px; 
+  padding: 70px; 
 }
 
 body {
@@ -139,9 +139,18 @@ body {
     }
   }
 
+  /* kuvatekstien muotoilu */
   .kuvateksti {
     text-align: center;
   }
+
+  /* kuvien responsiivisuus */
+  .kuva {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
 /*tokan muotoilu */
 
  

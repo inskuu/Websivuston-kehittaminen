@@ -32,7 +32,7 @@ body {
     width: 70%;
     padding: 1em;
     color: rgb(0, 0, 0);
-    height: 1400px;
+    height: 1600px;
   }
   h1 {
     text-align: center;
@@ -43,7 +43,6 @@ body {
   }
   p {
     position: relative;
-    left: 20px;
   }
   
   /* harrastuslista */
@@ -142,7 +141,7 @@ body {
     padding: 1em;
     border-left: 2px solid gray;
     color: rgb(0, 0, 0);
-    height: 1440px;
+    height: 1640px;
   }
   
   /* taulukko */
@@ -193,22 +192,6 @@ body {
   }
   input[type="submit"]:hover {
     background-color: rgb(221, 26, 224);
-  }
-  
-  /* liikkuva laatikko */
-  .animation-box {
-    margin: 20px;
-    width: 70px;
-    height: 50px;
-    position: relative;
-    animation: move 4s infinite alternate;
-  }
-  @keyframes move {
-    0%   {background-color:rgb(247, 247, 132); left:0px; top:0px;}
-    25%  {background-color:rgb(190, 136, 225); left:100px; top:0px;}
-    50%  {background-color:rgb(135, 193, 211); left:100px; top:100px;}
-    75%  {background-color:rgb(131, 215, 205); left:0px; top:100px;}
-    100% {background-color:rgb(247, 247, 132); left:0px; top:0px;}
   }
   
   /* kuvan muotoilu */
@@ -322,5 +305,13 @@ body {
   @media (min-width: 601px) {
     .media-query-box {
       background-color: lightblue;
+    }
+  }
+
+  /* responsiivinen sivupalkki */
+  @media screen and (max-width: 800px) {
+    aside {   
+      width: 100%;
+      padding: 0;
     }
   }
