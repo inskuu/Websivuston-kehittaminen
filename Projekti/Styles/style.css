@@ -181,6 +181,7 @@ li.dropdown {
 
   /* kuvatekstien muotoilu */
   .kuvateksti {
+    padding: 15px;
     text-align: center;
   }
 
@@ -191,10 +192,12 @@ li.dropdown {
     width: auto;
   }
 
-/* ekan muotoilu */
+/* nelosen muotoilu */
 .column {
   float: left;
-  width: 37%;
+  width: 70%;
   padding: 15px;
 }
- 
+
+
+}
