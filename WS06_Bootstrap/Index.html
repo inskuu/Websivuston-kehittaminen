@@ -1,40 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Media Queries Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .item {
-      flex: 1 1 200px;
-      background-color: #8ca0ff;
-      padding: 20px;
-      text-align: center;
-    }
-    @media (max-width: 600px) {
-      .container {
-        flex-direction: column;
-      }
-      .item {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-  </div>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projektityö</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./Images/australia.png">
+    <link rel="stylesheet" href="./Styles/style.css">
+  </head>
+  <body>
+<header>
+  <h1>Vuosi Australiassa</h1>
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">Minusta</a></li>
+      <li><a href="toka.html">Meidän auto</a></li>
+      <li><a href="kolmas.html">Avokadofarmi</a></li>
+      <li class="right"><a href="neljäs.html">Kohokohdat</a></li>
+    </ul>
+  </nav>
+</header>
+  </body>
 </html>

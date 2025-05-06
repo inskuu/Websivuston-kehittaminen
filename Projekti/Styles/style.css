@@ -1,18 +1,19 @@
 header {
-    color: rgb(0, 0, 0);
-    background-color: #216564 ;
+  color: rgb(0, 0, 0);
+  background-color: #216564 ;
 clear: left;
-  text-align: center;
-  padding: 70px; 
+text-align: center;
+padding: 70px; 
 }
 
 body {
     display: flex;
+    background-color: whitesmoke ;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 2px solid black;
+    border: 1px solid black;
     flex-direction: column;
     height: fit-content;
   }
@@ -94,15 +95,16 @@ body {
   .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
+    background-color: whitesmoke ;
+    padding: 20px;
   }
+
   
   /* Fake image */
   .fakeimg {
-    background-color: #aaa;
+    background-color: #eea57e;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
     height: auto;
     width: auto;
@@ -127,7 +129,7 @@ body {
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #216564;
     margin-top: 20px;
   }
   
@@ -151,6 +153,10 @@ body {
     width: auto;
   }
 
-/*tokan muotoilu */
-
+/* ekan muotoilu */
+.column {
+  float: left;
+  width: 37%;
+  padding: 15px;
+}
  

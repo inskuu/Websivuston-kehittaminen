@@ -1,0 +1,50 @@
+/*header */
+header {
+color: rgb(0, 0, 0);
+background-color: #216564;
+clear: left;
+text-align: center;
+padding: 70px; 
+}
+
+/* body */
+body {
+    margin: 0;
+}
+
+/* navigointi */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;   
+}
+
+ul li a:hover:not(.active)
+{background-color: aqua;}
+
+ul li a.active {
+    background-color: blue;
+}
+
+ul li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul li.right,
+    ul li {float: none}
+}
