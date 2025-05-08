@@ -209,6 +209,7 @@ li.dropdown {
 @media screen and (max-width:800px) {
   .column {
     width: 100%;
+    padding: 0;
   }
 }
 
