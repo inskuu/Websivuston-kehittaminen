@@ -18,6 +18,10 @@ body {
     height: fit-content;
   }
 
+  .blogi {
+    font-size: 18px;
+  }
+
   /* navigoinnin tyyli */
   .responsive-nav {
     background-color: black;
@@ -44,6 +48,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    font-weight: bold;
 }
 
 .responsive-nav .nav-list li {
@@ -219,7 +224,7 @@ td {
   text-align: left;
 }
 th {
-  font-size: 1.3em;
+  font-size: 20px;
   background-color: #216564;
 }
 
