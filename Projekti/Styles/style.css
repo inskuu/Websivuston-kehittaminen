@@ -31,6 +31,7 @@ body {
   .kuvateksti {
     padding: 15px;
     text-align: center;
+    font-size: 18px;
   }
   .blogi {
     font-size: 18px;
@@ -267,14 +268,28 @@ div.desc {
   }
 
   /* vitosen muotoilu */
- 
-.grid-container {
+.kuvakokoelma {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-gap: 10px;
 }
 .grid-item {
   background-color: #eea57e;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+}
+figure {
+  margin: auto;
+}
+figcaption {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  padding-top: 5px;
+  text-align: center;
+}
+.kuvakokoelma2 {
+    display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-gap: 10px;
+  padding-top: 10px;
 }
