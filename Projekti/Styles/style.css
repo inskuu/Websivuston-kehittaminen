@@ -6,6 +6,15 @@ text-align: center;
 padding: 70px; 
 }
 
+.sigmar-one-regular {
+  font-family: "Sigmar One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Sigmar One';
+}
 body {
     display: flex;
     background-color: whitesmoke ;
@@ -18,6 +27,11 @@ body {
     height: fit-content;
   }
 
+    /* tekstien muotoilu */
+  .kuvateksti {
+    padding: 15px;
+    text-align: center;
+  }
   .blogi {
     font-size: 18px;
   }
@@ -140,7 +154,7 @@ li.dropdown {
     float: left;
     width: 25%;
     background-color: whitesmoke ;
-    padding: 20px;
+    padding: 10px;
   }
 
   
@@ -152,7 +166,6 @@ li.dropdown {
     max-width: 100%;
     height: auto;
     width: auto;
-  
   }
   
   /* Add a card effect for articles */
@@ -185,12 +198,6 @@ li.dropdown {
     }
   }
 
-  /* kuvatekstien muotoilu */
-  .kuvateksti {
-    padding: 15px;
-    text-align: center;
-  }
-
   /* kuvien responsiivisuus */
   .kuva {
     max-width: 100%;
@@ -202,12 +209,12 @@ li.dropdown {
 .column {
   float: left;
   width: 33%;
-  padding: 15px;
   padding-left: 30px;
+
 }
 
 @media screen and (max-width:800px) {
-  .column {
+  .column, .column1 {
     width: 100%;
     padding: 0;
   }
@@ -231,5 +238,43 @@ th {
   color: white;
 }
 
+/* kolmosen muotoilu */
+div.gallery {
+  margin: 5px;
+  border: 5px solid #eea57e;
+  float: left;
+  width: 395px;
+}
 
+div.gallery:hover {
+  border: 5px solid black;
+}
 
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.kuvagalleria {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  /* vitosen muotoilu */
+ 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: #eea57e;
+  padding: 20px;
+  text-align: center;
+}
