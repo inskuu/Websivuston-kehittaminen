@@ -1,50 +1,143 @@
-/*header */
-header {
-color: rgb(0, 0, 0);
-background-color: #216564;
-clear: left;
-text-align: center;
-padding: 70px; 
-}
-
-/* body */
 body {
-    margin: 0;
-}
-
-/* navigointi */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-ul li {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    flex-direction: column;
+    height: fit-content;
+  }
+  header {
+    color: rgb(0, 0, 0);
+    background-color: #dc8ff0;
+    clear: left;
+    text-align: center;
+    padding: 50px;
+  }
+    @media (max-width: 800px) {
+       .yläpalkki {
+          background-color: rgb(169, 114, 245);
+        }
+      }
+    
+  footer {
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    background-color: #dc8ff0;
+    clear: left;
+    text-align: center;
+  }
+  section {
     float: left;
-}
+    width: 70%;
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    height: 1600px;
+    padding: 30px;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  p {
+    position: relative;
+  }
+  
+  /* harrastuslista */
+  ul {
+    list-style-type: none;
+    padding: 5px;
+  }
 
-ul li a {
- display: block;
- color: white;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;   
-}
-
-ul li a:hover:not(.active)
-{background-color: aqua;}
-
-ul li a.active {
-    background-color: blue;
-}
-
-ul li.right {
+  /* sivupalkin määrittely */
+  aside {
+    font-size: 1.05em;
     float: right;
-}
+    width: 20%;
+    padding: 1em;
+    border-left: 2px solid gray;
+    color: rgb(0, 0, 0);
+    height: 1640px;
+  }
+  
+  /* form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 20%
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid  rgb(83, 7, 69);
+    border-radius: 10px;
+  }
+  input[type="submit"] {
+    background-color: rgb(83, 7, 69);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(221, 26, 224);
+  }
+  
+  /* kuvan muotoilu */
+  .omakuva {
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  .omakuva:hover {
+    filter: grayscale(0%);
+  }
 
-@media screen and (max-width: 600px) {
-    ul li.right,
-    ul li {float: none}
-}
+/*responsiiviset kolumnit */
+  .responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    .column {
+      flex: 100%;
+    }
+  }
+
+  /* responsiivinen kuvat */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .omakuva {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  /* responsiivinen sivupalkki */
+  @media screen and (max-width: 800px) {
+    aside {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  button {
+    width: 50%;
+  }
