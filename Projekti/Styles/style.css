@@ -159,7 +159,7 @@ li.dropdown {
   }
 
   
-  /* Fake image */
+  /* kuvan taustaväri */
   .fakeimg {
     background-color: #eea57e;
     width: 100%;
@@ -169,7 +169,7 @@ li.dropdown {
     width: auto;
   }
   
-  /* Add a card effect for articles */
+  /* korttipohja */
   .card {
     background-color: white;
     padding: 20px;
@@ -210,17 +210,14 @@ li.dropdown {
 .column {
   float: left;
   width: 33%;
-  padding-left: 30px;
-
+  padding-left: 20px;
 }
-
 @media screen and (max-width:800px) {
-  .column, .column1 {
+  .column {
     width: 100%;
     padding: 0;
   }
 }
-
 /* taulukko */
 table {
   width: 100%;
@@ -238,34 +235,60 @@ th {
   background-color: #216564;
   color: white;
 }
+/* kyselyn muotoilu */
+input[type="submit"] {
+  background-color: #216564;
+  font-size: 18px;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+input[type="submit"]:hover {
+  background-color: black;
+  color: #eea57e;
+  font-size: 18px;
+  width: 100%;
+}
 
 /* kolmosen muotoilu */
-div.gallery {
-  margin: 5px;
-  border: 5px solid #eea57e;
-  float: left;
-  width: 395px;
-}
-
-div.gallery:hover {
+.kuvagalleria:hover {
   border: 5px solid black;
 }
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
+.kuvakehys {
   padding: 15px;
   text-align: center;
 }
 .kuvagalleria {
-    width: 100%;
+  border: 5px solid #eea57e;
+  margin: 5px;
+  float: left;
+  width: 400px;
+}
+.kuvagalleria img {
     max-width: 100%;
     height: auto;
-    width: auto;
+    width: 100%;
   }
+  .column12 {
+  float: left;
+  width: 37%;
+  padding-left: 30px;
+}
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+@media screen and (max-width:800px) {
+  .column12, .column3 {
+    width: 100%;
+    padding: 0;
+  }
+}
 
   /* vitosen muotoilu */
 .kuvakokoelma {
@@ -273,7 +296,7 @@ div.desc {
   grid-template-columns: repeat(3, 2fr);
   grid-gap: 10px;
 }
-.grid-item {
+.rantakuva {
   background-color: #eea57e;
   padding: 10px;
   text-align: center;
