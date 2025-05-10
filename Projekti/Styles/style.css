@@ -27,14 +27,12 @@ body {
     height: fit-content;
   }
 
-/* Left column */
+/* sarakkeet */
 .leftcolumn {   
     float: left;
     width: 74%;
     padding-left: 30px;
   }
-  
-  /* Right column */
   .rightcolumn {
     float: left;
     width: 25%;
@@ -42,7 +40,29 @@ body {
     padding: 10px;
     padding-right: 20px;
   }
-
+  @media screen and (max-width:800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.column12 {
+  float: left;
+  width: 37%;
+  padding-left: 30px;
+}
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  padding-right: 20px;
+}
+ @media screen and (max-width:800px) {
+  .column12, .column3{
+    width: 100%;
+    padding: 0;
+  }
+}
     /* Clear floats after the columns */
   .row::after {
     content: "";
@@ -192,26 +212,12 @@ li.dropdown {
     font-family: 'Sigmar One';
   }
   
-
   /* responsiivisuus */
   .kuva {
     max-width: 100%;
     height: auto;
     width: auto;
   }
-
-  @media screen and (max-width:800px) {
-  .column12, .column3{
-    width: 100%;
-    padding: 0;
-  }
-}
-  @media screen and (max-width:800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
 
 /* taulukko */
 table {
@@ -263,23 +269,16 @@ margin: 3px;
   float: left;
   width: 100%;
 }
+@media only screen and (max-width: 800px) {
+  .kuvagalleria {
+    width: 100%;
+  }
+}
 .kuvagalleria img {
     max-width: 100%;
     height: auto;
     width: 100%;
   }
-
-  .column12 {
-  float: left;
-  width: 37%;
-  padding-left: 30px;
-}
-.column3 {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  padding-right: 20px;
-}
 
   /* vitosen muotoilu */
 .kuvakokoelma {
