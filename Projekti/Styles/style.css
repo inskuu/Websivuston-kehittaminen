@@ -40,13 +40,7 @@ body {
     padding: 10px;
     padding-right: 20px;
   }
-  @media screen and (max-width:800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
-.column12 {
+  .column12 {
   float: left;
   width: 37%;
   padding-left: 30px;
@@ -57,12 +51,13 @@ body {
   padding: 10px;
   padding-right: 20px;
 }
- @media screen and (max-width:800px) {
-  .column12, .column3{
+  @media screen and (max-width:800px) {
+  .leftcolumn, .column12, .rightcolumn, .column3 {
     width: 100%;
     padding: 0;
   }
 }
+
     /* Clear floats after the columns */
   .row::after {
     content: "";
@@ -283,8 +278,9 @@ margin: 3px;
   /* vitosen muotoilu */
 .kuvakokoelma {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+ 
 }
 .rantakuva {
   background-color: #eea57e;
@@ -302,7 +298,7 @@ figcaption {
 }
 .kuvakokoelma2 {
     display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  grid-template-rows: auto;
   grid-gap: 10px;
   padding-top: 10px;
 }
