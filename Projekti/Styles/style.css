@@ -5,7 +5,12 @@ clear: left;
 text-align: center;
 padding: 70px; 
 }
-
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
 .sigmar-one-regular {
   font-family: "Sigmar One", sans-serif;
   font-weight: 400;
@@ -42,7 +47,7 @@ body {
   }
   .column12 {
   float: left;
-  width: 37%;
+  width: 37.5%;
   padding-left: 30px;
 }
 .column3 {
@@ -302,3 +307,7 @@ figcaption {
   grid-gap: 10px;
   padding-top: 10px;
 }
+
+
+
+
