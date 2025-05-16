@@ -221,6 +221,10 @@ li.dropdown {
     height: auto;
     width: auto;
   }
+.video {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* taulukko */
