@@ -1,210 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/40f5c50bbc.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/40f5c50bbc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Vuosi Australiassa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="./Images/australia.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Styles/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="./Images/australia.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/style.css" />
   </head>
   <body>
     <header>
       <h1>Vuosi Australiassa</h1>
-</header>
-<nav class="responsive-nav">
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Valikko</button>
-  <ul class="nav-list">
-      <li><a href="index.html">Australia</a></li>
-      <li><a href="toka.html">Meidän auto</a></i></li>
-      <li><a href="kolmas.html">Avokadofarmi</a></li>
-      <li class="dropdown"><a href="javascript:void(0)" class="drop">Kohokohdat <i class="fa-regular fa-heart"></i></a>
-        <div class="dropdown-content">
-          <a href="neljäs.html">Uluru + Kata tjuta</a>
-          <a href="viides.html">Australian rannat</a>
-          <a href="kuudes.html">Gibb river road</a>
-        </div></li>
-    </ul>
-</nav>
-<main>
-<div class="rivi">
-  <div class="column12">
-    <div class="kortti">
-      <h2>Minä</h2>
-      <div class="kuvantausta">
-          <img src="Images/omakuva.jpg"
-          alt="Oma kuva"
-          class="kuva"
-          >
+    </header>
+    <nav class="responsive-nav">
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Valikko</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Australia</a></li>
+        <li><a href="toka.html">Meidän auto</a></li>
+        <li><a href="kolmas.html">Avokadofarmi</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="drop"
+            >Kohokohdat <i class="fa-regular fa-heart"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="neljäs.html">Uluru + Kata tjuta</a>
+            <a href="viides.html">Australian rannat</a>
+            <a href="kuudes.html">Gibb river road</a>
           </div>
-      <p class="kuvateksti">Tässä olen minä Purnululun kansallispuistossa vuonna 2013</p>
-  </div>
-  </div>
-  <div class="column12">
-    <div class="kortti">
-    <h2>Australia</h2>
-    <p class="blogi">Aloitimme Australian matkan Sydneystä. Se tuntui turvalliselta paikalta aloittaa, koska minulla asuu sukulaisia siellä. Ajatuksena oli kiertää maata ja tehdä töitä. Töitä etsimme Helpx sivuston kautta. Töistä ei saanut palkkaa, 
-      mutta perheet tarjosivat ilmaisen majoituksen ja ruoan. Saimme tehdä monenlaisia töitä vuoden aikana. Teimme paljon piharemontteja, purimme keittiöitä, maalasimme seiniä, hoidimme lampaita ja kanoja sekä olimme talovahteina.
-      Ensimmäisen puoli vuotta kiersimme paikasta toiseen itärannikolla töitä tehden. Välimatkat Australiassa on todella pitkiä ja kyytien etsiminen ja järjestäminen alkoi käydä työlääksi, joten päätimme ostaa oman auton. Viimeisen puolen vuoden aikana ajoimme
-      koko maan ympäri tutustuen mahdollisimman moneen maan upeista nähtävyyksistä.
-    </p>
-  </div>
-  <div class="kortti">
-    <h2>Tiesitkö tätä?</h2>
-    <table class="tietovisa">
-      <tr>
-        <td class="visa">Australia on maailman ainoa valtio, joka kattaa kokonaisen mantereen </td>
-      <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-
-      <tr>
-        <td class="visa">Suurin osa väestöstä asuu Australian rannikolla</td>
-        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-
-      <tr>
-        <td class="visa">Australiassa on paikka nimeltä Gnomesville, jossa on yli 5000 puutarhatonttua</td>
-        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-
-      <tr>
-        <td class="visa">Suuri valliriutta on maailman suurin ekosysteemi</td>
-        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-
-      <tr>
-        <td class="visa">Fraser island on maailman isoin hiekkasaari</td>
-        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-
-       <tr>
-        <td class="visa">Australiassa on enemmän kameleita kuin Egyptissä</td>
-        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-
-       <tr>
-        <td class="visa">Tasmaniassa on maailman puhtain ilma</td>
-        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
-      </tr>
-    </table>
-    <br>
-    <form>
-  <label for="vastaus">Montako tiesit?</label>
-  <input type="text" id="vastaus" name="vastaus">
-  <input type="submit" name="nappula" value="Lähetä">
-</form>
- 
- <br>
- <br>
- 
-  </div>
-  </div>
-   <div class="column3">
-      <div class="kortti">
-        <h3>Reittikartta</h3>
-        <div class="kuvantausta">
-            <a href="https://www.travellerspoint.com/map/#/trip/494115/stop/3252067">
-              <img src="Images/kartta.png" 
-              alt="Reittikartta"
-              class="kuva"
-              width="465"></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="rivi">
+        <div class="column12">
+          <div class="kortti">
+            <h2>Minä</h2>
+            <div class="kuvantausta">
+              <img src="Images/omakuva.jpg" alt="Oma kuva" class="kuva" />
+            </div>
+            <p class="kuvateksti">
+              Tässä olen minä Purnululun kansallispuistossa vuonna 2013
+            </p>
+          </div>
         </div>
-        <p class="kuvateksti">Kuvaa klikkaamalla pääset tutkimaan karttaa tarkemmin</p>
-      </div>
-      <div class="kortti">
-        <h5>Mihin kaupunkiin sinä haluaisit matkustaa?</h5>
-<form>
-  <input type="checkbox" id="sydney" name="fav-city" value="sydney">
-  <label for="sydney">Sydney</label><br>
-  <input type="checkbox" id="melbourne" name="fav_city" value="melbourne">
-  <label for="melbourne">Melbourne</label><br>
-  <input type="checkbox" id="brisbane" name="fav_city" value="brisbane">
-  <label for="brisbane">Brisbane</label><br>
-   <input type="checkbox" id="perth" name="fav_city" value="perth">
-  <label for="perth">Perth</label><br>
-   <input type="checkbox" id="adelaide" name="fav_city" value="adelaide">
-  <label for="adelaide">Adelaide</label><br>
-   <input type="checkbox" id="canberra" name="fav_city" value="canberra">
-  <label for="canberra">Canberra</label><br>
-  <br>
-  <input type="submit" name="suosikki" onclick="alert('G´day mate!')" value="Paina tästä">
-</form>
+        <div class="column12">
+          <div class="kortti">
+            <h2>Australia</h2>
+            <p class="blogi">
+              Aloitimme Australian matkan Sydneystä. Se tuntui turvalliselta
+              paikalta aloittaa, koska minulla asuu sukulaisia siellä.
+              Ajatuksena oli kiertää maata ja tehdä töitä. Töitä etsimme Helpx
+              sivuston kautta. Töistä ei saanut palkkaa, mutta perheet
+              tarjosivat ilmaisen majoituksen ja ruoan. Saimme tehdä monenlaisia
+              töitä vuoden aikana. Teimme paljon piharemontteja, purimme
+              keittiöitä, maalasimme seiniä, hoidimme lampaita ja kanoja sekä
+              olimme talovahteina. Ensimmäisen puoli vuotta kiersimme paikasta
+              toiseen itärannikolla töitä tehden. Välimatkat Australiassa on
+              todella pitkiä ja kyytien etsiminen ja järjestäminen alkoi käydä
+              työlääksi, joten päätimme ostaa oman auton. Viimeisen puolen
+              vuoden aikana ajoimme koko maan ympäri tutustuen mahdollisimman
+              moneen maan upeista nähtävyyksistä.
+            </p>
+          </div>
+          <div class="kortti">
+            <h2>Tiesitkö tätä?</h2>
+            <table class="tietovisa">
+              <tr>
+                <td class="visa">
+                  Australia on maailman ainoa valtio, joka kattaa kokonaisen
+                  mantereen
+                </td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
 
+              <tr>
+                <td class="visa">
+                  Suurin osa väestöstä asuu Australian rannikolla
+                </td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="visa">
+                  Australiassa on paikka nimeltä Gnomesville, jossa on yli 5000
+                  puutarhatonttua
+                </td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="visa">
+                  Suuri valliriutta on maailman suurin ekosysteemi
+                </td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="visa">
+                  Fraser island on maailman isoin hiekkasaari
+                </td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="visa">
+                  Australiassa on enemmän kameleita kuin Egyptissä
+                </td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="visa">Tasmaniassa on maailman puhtain ilma</td>
+                <td class="visa">
+                  <label class="ruutu"
+                    ><input type="checkbox" /><span class="check"></span
+                  ></label>
+                </td>
+              </tr>
+            </table>
+            <br />
+            <form>
+              <label for="vastaus">Montako tiesit?</label>
+              <input type="text" id="vastaus" name="vastaus" />
+              <input type="submit" name="nappula" value="Lähetä" />
+            </form>
+
+            <br />
+            <br />
+          </div>
+        </div>
+        <div class="column3">
+          <div class="kortti">
+            <h3>Reittikartta</h3>
+            <div class="kuvantausta">
+              <a
+                href="https://www.travellerspoint.com/map/#/trip/494115/stop/3252067"
+              >
+                <img
+                  src="Images/kartta.png"
+                  alt="Reittikartta"
+                  class="kuva"
+                  width="465"
+              /></a>
+            </div>
+            <p class="kuvateksti">
+              Kuvaa klikkaamalla pääset tutkimaan karttaa tarkemmin
+            </p>
+          </div>
+          <div class="kortti">
+            <h5>Mihin kaupunkiin sinä haluaisit matkustaa?</h5>
+            <form>
+              <input
+                type="checkbox"
+                id="sydney"
+                name="fav-city"
+                value="sydney"
+              />
+              <label for="sydney">Sydney</label><br />
+              <input
+                type="checkbox"
+                id="melbourne"
+                name="fav_city"
+                value="melbourne"
+              />
+              <label for="melbourne">Melbourne</label><br />
+              <input
+                type="checkbox"
+                id="brisbane"
+                name="fav_city"
+                value="brisbane"
+              />
+              <label for="brisbane">Brisbane</label><br />
+              <input type="checkbox" id="perth" name="fav_city" value="perth" />
+              <label for="perth">Perth</label><br />
+              <input
+                type="checkbox"
+                id="adelaide"
+                name="fav_city"
+                value="adelaide"
+              />
+              <label for="adelaide">Adelaide</label><br />
+              <input
+                type="checkbox"
+                id="canberra"
+                name="fav_city"
+                value="canberra"
+              />
+              <label for="canberra">Canberra</label><br />
+              <br />
+              <input
+                type="submit"
+                name="suosikki"
+                onclick="alert('G´day mate!')"
+                value="Paina tästä"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="vasensarake">
+          <div class="kortti">
+            <h2 title="Lähde: Wikipedia">Faktoja Australiasta</h2>
+            <div style="overflow-x: auto">
+              <table class="taulukko">
+                <tr>
+                  <th class="ekarivi">Suurimmat kaupungit</th>
+                  <th class="ekarivi">Väkiluku (kesäkuu 2024)</th>
+                  <th class="ekarivi">Pinta-ala km²</th>
+                  <th class="ekarivi">
+                    Mieleenpainuvin nähtävyys, jossa kävin
+                  </th>
+                </tr>
+                <tr>
+                  <td class="rivit">Sydney</td>
+                  <td class="rivit">5 557 233</td>
+                  <td class="rivit">12 367,7 km²</td>
+                  <td class="rivit">Sydney Opera House</td>
+                </tr>
+                <tr>
+                  <td class="rivit">Melbourne</td>
+                  <td class="rivit">5 350 705</td>
+                  <td class="rivit">9 993 km²</td>
+                  <td class="rivit">Great Ocean Road</td>
+                </tr>
+                <tr>
+                  <td class="rivit">Brisbane</td>
+                  <td class="rivit">2 780 063</td>
+                  <td class="rivit">15 842 km²</td>
+                  <td class="rivit">South Bank</td>
+                </tr>
+                <tr>
+                  <td class="rivit">Perth</td>
+                  <td class="rivit">2 384 371</td>
+                  <td class="rivit">6 417,9 km²</td>
+                  <td class="rivit">Elisabeth Quay</td>
+                </tr>
+                <tr>
+                  <td class="rivit">Adelaide</td>
+                  <td class="rivit">1 469 163</td>
+                  <td class="rivit">3 259,8 km²</td>
+                  <td class="rivit">Botanic Garden</td>
+                </tr>
+                <tr>
+                  <td class="rivit">Canberra</td>
+                  <td class="rivit">473 855</td>
+                  <td class="rivit">814,2 km²</td>
+                  <td class="rivit">Parliament House</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  <div class="vasensarake">
-    <div class="kortti">
-      <h2 title="Lähde: Wikipedia">Faktoja Australiasta</h2>
-    <div style="overflow-x: auto;">
-        <table class="taulukko">
-          <tr>
-            <th class="ekarivi">Suurimmat kaupungit</th>
-            <th class="ekarivi">Väkiluku (kesäkuu 2024)</th>
-            <th class="ekarivi">Pinta-ala km²</th>
-            <th class="ekarivi">Mieleenpainuvin nähtävyys, jossa kävin</th>
-            
-          </tr>
-          <tr>
-            <td class="rivit">Sydney</td>
-            <td class="rivit">5 557 233</td>
-            <td class="rivit">12 367,7 km²</td>
-            <td class="rivit">Sydney Opera House</td>
-           
-          </tr>
-          <tr>
-            <td class="rivit">Melbourne</td>
-            <td class="rivit">5 350 705</td>
-            <td class="rivit">9 993 km²</td>
-            <td class="rivit">Great Ocean Road</td>
-            
-           
-          </tr>
-          <tr>
-            <td class="rivit">Brisbane</td>
-            <td class="rivit">2 780 063</td>
-            <td class="rivit">15 842 km²</td>
-            <td class="rivit">South Bank</td>
-           
-          </tr>
-          <tr>
-            <td class="rivit">Perth</td>
-            <td class="rivit">2 384 371</td>
-            <td class="rivit">6 417,9 km²</td>
-            <td class="rivit">Elisabeth Quay</td>
-           
-          </tr>
-          <tr>
-            <td class="rivit">Adelaide</td>
-            <td class="rivit">1 469 163</td>
-            <td class="rivit">3 259,8 km²</td>
-            <td class="rivit">Botanic Garden</td>
-          
-          </tr>
-          <tr>
-            <td class="rivit">Canberra</td>
-            <td class="rivit">473 855</td>
-            <td class="rivit">814,2 km²</td>
-            <td class="rivit">Parliament House</td>
-          </tr>
-        </table>
-    </div>
-  </div>
-  </div>
-  </div>
-  </main>
-  <footer>
-    <h2>Copyright © Iina Karhu</h2>
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </main>
+    <footer>
+      <h2>Copyright © Iina Karhu</h2>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        function toggleMenu() {
-            const navList = document.querySelector('.responsive-nav .nav-list');
-            navList.classList.toggle('active');
-        }
+      function toggleMenu() {
+        const navList = document.querySelector(".responsive-nav .nav-list");
+        navList.classList.toggle("active");
+      }
     </script>
   </body>
 </html>
