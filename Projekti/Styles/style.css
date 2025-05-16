@@ -226,6 +226,30 @@ li.dropdown {
   height: auto;
 }
 
+/* ekan muotoilu */
+#blogi:hover {
+  filter:grayscale(100%)
+}
+.salaviesti {
+  position: relative;
+  display: inline-block;
+}
+.salaviesti .salaviestiteksti {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #eea57e;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.salaviesti:hover .salaviestiteksti {
+  visibility: visible;
+}
 
 /* taulukko */
 .taulukko {
