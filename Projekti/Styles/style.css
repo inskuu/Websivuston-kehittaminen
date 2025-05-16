@@ -36,12 +36,12 @@ body {
   }
 
 /* sarakkeet */
-.leftcolumn {   
+.vasensarake {   
     float: left;
     width: 74%;
     padding-left: 30px;
   }
-  .rightcolumn {
+  .oikeasarake {
     float: left;
     width: 25%;
     background-color: whitesmoke ;
@@ -59,8 +59,8 @@ body {
   padding: 10px;
   padding-right: 20px;
 }
-  @media screen and (max-width:800px) {
-  .leftcolumn, .column12, .rightcolumn, .column3 {
+  @media screen and (max-width:1000px) {
+  .vasensarake, .column12, .oikeasarake, .column3 {
     width: 100%;
     padding: 0;
   }
@@ -187,7 +187,7 @@ li.dropdown {
 }
   
   /* kuvan taustaväri */
-  .fakeimg {
+  .kuvantausta {
     background-color: #eea57e;
     width: 100%;
     padding: 10px;
@@ -224,18 +224,18 @@ li.dropdown {
 
 
 /* taulukko */
-table {
+.taulukko {
   width: 100%;
 border-collapse: separate;
 }
-th,
-td {
+.rivit,
+.ekarivi {
   border: 1.5px solid #000000;
   border-radius: 8px;
   padding: 6px;
   text-align: left;
 }
-th {
+.ekarivi {
   font-size: 20px;
   background-color: #216564;
   background-image: linear-gradient(#216564, #4da09e);
@@ -243,9 +243,9 @@ th {
 }
 
 /* kyselyn muotoilu */
-input[type="submit"] {
+input[name="suosikki"] {
   background-color: #216564;
-  font-size: 18px;
+  font-size: 19px;
   color: white;
   padding: 12px;
   border: none;
@@ -253,35 +253,90 @@ input[type="submit"] {
   cursor: pointer;
   width: 100%;
 }
-input[type="submit"]:hover {
+input[name="suosikki"]:hover {
   background-color: black;
   color: #eea57e;
   font-size: 18px;
   width: 100%;
 }
 
-/* kolmosen muotoilu */
-.kuvagalleria:hover {
-  border: 5px solid black;
+/* tietovisa */
+.tietovisa {
+  width: 100%;
+border-collapse: collapse;
 }
-.kuvakehys {
-  padding: 10px;
-  text-align: center;
+.visa {
+  font-size: 17px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 6px;
+  text-align: left;
+  border-bottom: 1.5px solid black;
 }
-.kuvakokoelma2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+.ruutu {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.kuvagalleria {
-  border: 5px solid #eea57e;
+.ruutu input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-@media only screen and (max-width: 800px) {
-  .kuvagalleria {
-    width: 100%;
-  }
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eea57e;
 }
-
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.ruutu input:checked ~ .check:after {
+  display: block;
+}
+.ruutu .check:after {
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[name="nappula"] {
+border-radius: 50%;
+padding: 15px;
+float: right;
+background-color: #eea57e;
+color: #000000;
+}
+input[name="nappula"]:active {
+  color: #eea57e;
+  background-color: black;
+  box-shadow: 0 5px #eea57e;
+  transform: translateY(4px);
+}
+input[name="vastaus"] {
+  width: 70%;
+  border: none;
+  border-bottom: 1.5px solid black;
+  padding: 8px;
+}
 
   /* tokan muotoilu */
 .autokuva1, .autokuva2, .autokuva3 {
@@ -289,10 +344,44 @@ input[type="submit"]:hover {
   padding: 10px;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
-  .autokuva1 {grid-area: 1}
-  .autokuva2 {grid-area: 2}
-  .autokuva3 {grid-area: 3}
+.kuvakokoelma3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; 
+}
+@media screen and (max-width: 1300px) {
+  .kuvakokoelma3 {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ }
+}
+@media screen and (max-width: 489px) {
+ .kuvakokoelma3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ }
+}
+
+/* kolmosen muotoilu */
+.farmikuva:hover {
+  border: 5px solid black;
+}
+.kuvakehys {
+  padding: 10px;
+  text-align: center;
+}
+.kuvakokoelma4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+.vasen,
+.oikea{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.farmikuva {
+  border: 5px solid #eea57e;
+  object-fit: cover;
 }
 
   /* vitosen muotoilu */
@@ -306,7 +395,6 @@ input[type="submit"]:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
  }
 }
-  
 .rantakuva {
   background-color: #eea57e;
   padding: 10px;
@@ -327,10 +415,6 @@ figcaption {
   grid-gap: 10px;
   padding-top: 10px;
 }
-.kuvakokoelma3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; 
-}
+
 
 

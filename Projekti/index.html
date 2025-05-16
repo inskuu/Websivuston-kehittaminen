@@ -35,11 +35,11 @@
   <div class="column12">
     <div class="kortti">
       <h2>Minä</h2>
-      <div class="fakeimg">
+      <div class="kuvantausta">
           <img src="Images/omakuva.jpg"
           alt="Oma kuva"
           class="kuva"
-          width="465">
+          >
           </div>
       <p class="kuvateksti">Tässä olen minä Purnululun kansallispuistossa vuonna 2013</p>
   </div>
@@ -53,11 +53,60 @@
       koko maan ympäri tutustuen mahdollisimman moneen maan upeista nähtävyyksistä.
     </p>
   </div>
+  <div class="kortti">
+    <h2>Tiesitkö tätä?</h2>
+    <table class="tietovisa">
+      <tr>
+        <td class="visa">Australia on maailman ainoa valtio, joka kattaa kokonaisen mantereen </td>
+      <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+
+      <tr>
+        <td class="visa">Suurin osa väestöstä asuu Australian rannikolla</td>
+        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+
+      <tr>
+        <td class="visa">Australiassa on paikka nimeltä Gnomesville, jossa on yli 5000 puutarhatonttua</td>
+        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+
+      <tr>
+        <td class="visa">Suuri valliriutta on maailman suurin ekosysteemi</td>
+        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+
+      <tr>
+        <td class="visa">Fraser island on maailman isoin hiekkasaari</td>
+        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+
+       <tr>
+        <td class="visa">Australiassa on enemmän kameleita kuin Egyptissä</td>
+        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+
+       <tr>
+        <td class="visa">Tasmaniassa on maailman puhtain ilma</td>
+        <td class="visa"><label class="ruutu"><input type="checkbox"><span class="check"></span></label></td>
+      </tr>
+    </table>
+    <br>
+    <form>
+  <label for="vastaus">Montako tiesit?</label>
+  <input type="text" id="vastaus" name="vastaus">
+  <input type="submit" name="nappula" value="Lähetä">
+</form>
+ 
+ <br>
+ <br>
+ 
+  </div>
   </div>
    <div class="column3">
       <div class="kortti">
         <h3>Reittikartta</h3>
-        <div class="fakeimg">
+        <div class="kuvantausta">
             <a href="https://www.travellerspoint.com/map/#/trip/494115/stop/3252067">
               <img src="Images/kartta.png" 
               alt="Reittikartta"
@@ -82,64 +131,64 @@
    <input type="checkbox" id="canberra" name="fav_city" value="canberra">
   <label for="canberra">Canberra</label><br>
   <br>
-  <input type="submit" onclick="alert('G´day mate!')" value="Lähetä">
+  <input type="submit" name="suosikki" onclick="alert('G´day mate!')" value="Paina tästä">
 </form>
 
       </div>
     </div>
-  <div class="leftcolumn">
+  <div class="vasensarake">
     <div class="kortti">
       <h2 title="Lähde: Wikipedia">Faktoja Australiasta</h2>
     <div style="overflow-x: auto;">
-        <table>
+        <table class="taulukko">
           <tr>
-            <th>Suurimmat kaupungit</th>
-            <th>Väkiluku (kesäkuu 2024)</th>
-            <th>Pinta-ala km²</th>
-            <th>Mieleenpainuvin nähtävyys, jossa kävin</th>
+            <th class="ekarivi">Suurimmat kaupungit</th>
+            <th class="ekarivi">Väkiluku (kesäkuu 2024)</th>
+            <th class="ekarivi">Pinta-ala km²</th>
+            <th class="ekarivi">Mieleenpainuvin nähtävyys, jossa kävin</th>
             
           </tr>
           <tr>
-            <td>Sydney</td>
-            <td>5 557 233</td>
-            <td>12 367,7 km²</td>
-            <td>Sydney Opera House</td>
+            <td class="rivit">Sydney</td>
+            <td class="rivit">5 557 233</td>
+            <td class="rivit">12 367,7 km²</td>
+            <td class="rivit">Sydney Opera House</td>
            
           </tr>
           <tr>
-            <td>Melbourne</td>
-            <td>5 350 705</td>
-            <td>9 993 km²</td>
-            <td>Great Ocean Road</td>
+            <td class="rivit">Melbourne</td>
+            <td class="rivit">5 350 705</td>
+            <td class="rivit">9 993 km²</td>
+            <td class="rivit">Great Ocean Road</td>
             
            
           </tr>
           <tr>
-            <td>Brisbane</td>
-            <td>2 780 063</td>
-            <td>15 842 km²</td>
-            <td>South Bank</td>
+            <td class="rivit">Brisbane</td>
+            <td class="rivit">2 780 063</td>
+            <td class="rivit">15 842 km²</td>
+            <td class="rivit">South Bank</td>
            
           </tr>
           <tr>
-            <td>Perth</td>
-            <td>2 384 371</td>
-            <td>6 417,9 km²</td>
-            <td>Elisabeth Quay</td>
+            <td class="rivit">Perth</td>
+            <td class="rivit">2 384 371</td>
+            <td class="rivit">6 417,9 km²</td>
+            <td class="rivit">Elisabeth Quay</td>
            
           </tr>
           <tr>
-            <td>Adelaide</td>
-            <td>1 469 163</td>
-            <td>3 259,8 km²</td>
-            <td>Botanic Garden</td>
+            <td class="rivit">Adelaide</td>
+            <td class="rivit">1 469 163</td>
+            <td class="rivit">3 259,8 km²</td>
+            <td class="rivit">Botanic Garden</td>
           
           </tr>
           <tr>
-            <td>Canberra</td>
-            <td>473 855</td>
-            <td>814,2 km²</td>
-            <td>Parliament House</td>
+            <td class="rivit">Canberra</td>
+            <td class="rivit">473 855</td>
+            <td class="rivit">814,2 km²</td>
+            <td class="rivit">Parliament House</td>
           </tr>
         </table>
     </div>
