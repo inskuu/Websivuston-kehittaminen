@@ -445,5 +445,27 @@ figcaption {
   padding-top: 10px;
 }
 
+/* kutosen muotoilu */
+.animaatio {
+  padding-top: 15px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  animation-name: blogi;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blogi {
+  0%   { left:0px; }
+  50%  {right:350px; left:350px;}
+  100% {left:0px; }
+}
+.linkki:link {
+  color: black;
+  text-decoration: none;
+}
+.linkki:active, .linkki:hover {
+  color: #216564;
+}
 
 
