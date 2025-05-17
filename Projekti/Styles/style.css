@@ -447,7 +447,7 @@ figcaption {
 
 /* kutosen muotoilu */
 .animaatio {
-  padding-top: 15px;
+  padding-top: 5px;
   width: 150px;
   height: 150px;
   position: relative;
@@ -456,9 +456,11 @@ figcaption {
   animation-iteration-count: infinite;
 }
 @keyframes blogi {
-  0%   {left:0px; right:100px; }
-  50%  {right:100px; left:100px;}
-  100% {left:0px; }
+  0%   {top:0px; left:0px; }
+  25%  {top:0px; left: 30px;}
+  50%  {top:30px; left:30px;}
+  75%  {top:30px; left:0px;}
+  100% {top:0px; left:0px; }
 }
 .linkki:link {
   color: black;
