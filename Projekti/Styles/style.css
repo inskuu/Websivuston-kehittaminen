@@ -456,8 +456,8 @@ figcaption {
   animation-iteration-count: infinite;
 }
 @keyframes blogi {
-  0%   {left:0px; right:150px; }
-  50%  {right:150px; left:150px;}
+  0%   {left:0px; right:100px; }
+  50%  {right:100px; left:100px;}
   100% {left:0px; }
 }
 .linkki:link {
